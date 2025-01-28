@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8K Image Generation with AI</title>
+    <link rel="stylesheet" href="car.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AI 8K Image Generator</h1>
+            <p>Enter a prompt to generate an 8K image using AI.</p>
+        </div>
+    </header>
+
+    <section class="input-section">
+        <div class="container">
+            <label for="prompt">Enter your prompt:</label>
+            <textarea id="prompt" rows="4" placeholder="Describe the image you want to generate..."></textarea>
+            <button onclick="generateImage()">Generate 8K Image</button>
+        </div>
+    </section>
+
+    <section id="image-output" class="output-section">
+        <div class="container">
+            <h2>Generated Image:</h2>
+            <div id="loading" class="loading-message">
+                <p>Generating your 8K image... Please wait.</p>
+            </div>
+            <div id="image-container" class="image-container">
+                <!-- Image will appear here after generation -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AI Image Generator. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="car.js"></script>
+</body>
+</html>
