@@ -11,17 +11,26 @@
         <h1>Polling System</h1>
         <p>What is your favorite programming language?</p>
         <form id="pollForm">
-            <input type="radio" id="java" name="language" value="Java">
-            <label for="java">Java</label><br>
-            <input type="radio" id="python" name="language" value="Python">
-            <label for="python">Python</label><br>
-            <input type="radio" id="javascript" name="language" value="JavaScript">
-            <label for="javascript">JavaScript</label><br>
+            <div class="poll-option">
+                <input type="radio" id="java" name="language" value="Java">
+                <label for="java">Java</label>
+            </div>
+            <div class="poll-option">
+                <input type="radio" id="python" name="language" value="Python">
+                <label for="python">Python</label>
+            </div>
+            <div class="poll-option">
+                <input type="radio" id="javascript" name="language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+            </div>
             <button type="submit">Vote</button>
         </form>
         <p id="pollResult"></p>
+
+        <canvas id="pollChart" width="400" height="200"></canvas>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="poll.js"></script>
 </body>
 </html>
