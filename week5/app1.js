@@ -8,7 +8,7 @@ async function getWeather() {
 
   try {
     const response = await fetch(url);
-    
+
     // Check if the response was successful
     if (!response.ok) {
       alert("Error: Unable to fetch weather data!");
@@ -29,6 +29,24 @@ async function getWeather() {
     document.getElementById("weather-description").innerText = `Condition: ${data.current.condition.text}`;
     document.getElementById("humidity").innerText = `Humidity: ${data.current.humidity}%`;
     document.getElementById("wind-speed").innerText = `Wind Speed: ${data.current.wind_kph} kph`;
+
+    // Get the weather condition text (e.g., 'Clear', 'Rain', 'Cloudy', etc.)
+    const condition = data.current.condition.text.toLowerCase();
+
+    // Change the background and styles based on weather condition
+    if (condition.includes("clear")) {
+      document.body.className = "clear";
+    } else if (condition.includes("cloudy") || condition.includes("overcast")) {
+      document.body.className = "cloudy";
+    } else if (condition.includes("rain")) {
+      document.body.className = "rainy";
+    } else if (condition.includes("snow")) {
+      document.body.className = "snowy";
+    } else if (condition.includes("storm")) {
+      document.body.className = "stormy";
+    } else {
+      document.body.className = ""; // Default to no weather
+    }
 
   } catch (error) {
     alert("Error fetching weather data. Please try again.");

@@ -91,7 +91,7 @@
   /* Rainy weather */
   .rainy {
     background: linear-gradient(to bottom, #708090, #2f4f4f);
-    color: #e20f0f;
+    color: #fff;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
   }
   
