@@ -1,0 +1,12 @@
+<items>
+    <item>
+        <name>Notebook</name>
+        <price>50.00</price>
+        <quantity>2</quantity>
+    </item>
+    <item>
+        <name>Pen</name>
+        <price>10.00</price>
+        <quantity>5</quantity>
+    </item>
+</items>
