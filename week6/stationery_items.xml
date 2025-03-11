@@ -1,0 +1,26 @@
+<stationery>
+    <item>
+        <id>1</id>
+        <name>Notebook</name>
+        <price>50.00</price>
+        <stock>100</stock>
+    </item>
+    <item>
+        <id>2</id>
+        <name>Pen</name>
+        <price>10.00</price>
+        <stock>200</stock>
+    </item>
+    <item>
+        <id>3</id>
+        <name>Pencil</name>
+        <price>5.00</price>
+        <stock>150</stock>
+    </item>
+    <item>
+        <id>4</id>
+        <name>Eraser</name>
+        <price>8.00</price>
+        <stock>80</stock>
+    </item>
+</stationery>
